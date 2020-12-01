@@ -1,9 +1,6 @@
 f = open('input.txt', 'r')
-expense_report = []
 
-for line in f:
-  line = int(line.replace('\n', ''))
-  expense_report.append(line)
+expense_report = [int(line.replace('\n', '')) for line in f]
 
 sorted_expense_report = sorted(expense_report)
 
