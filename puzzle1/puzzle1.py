@@ -8,7 +8,7 @@ for line in f:
 sorted_expense_report = sorted(expense_report)
 
 # Find the two entries that sum to 2020; what do you get if you multiply them together?
-def find_2_num_sum_2020(arr):
+def find_2_num_sum_2020_product(arr):
   j = len(arr) - 1
   i = 0
   found_sum = False
@@ -23,7 +23,7 @@ def find_2_num_sum_2020(arr):
   print(arr[i] * arr[j]) if found_sum else print("No sum for 2020 in array.")
 
 # In your expense report, what is the product of the three entries that sum to 2020?
-def find_3_num_sum_2020(arr):
+def find_3_num_sum_2020_product(arr):
   k = len(arr) - 1
   j = 1
   i = 0
@@ -40,5 +40,5 @@ def find_3_num_sum_2020(arr):
       found_sum = True
   print(arr[i] * arr[j] * arr[k]) if found_sum else print("No sum for 2020 in array.")
 
-find_2_num_sum_2020(sorted_expense_report)
-find_3_num_sum_2020(sorted_expense_report)
+find_2_num_sum_2020_product(sorted_expense_report)
+find_3_num_sum_2020_product(sorted_expense_report)
